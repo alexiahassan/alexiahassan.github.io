@@ -1,0 +1,234 @@
+body {
+    background-color: #dce9fd;
+    color: #454b9b;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+#myVideo {
+    position: absolute;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -5;
+}
+
+.landingContainer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    // flex-direction: column;
+}
+
+.landingImageContainer {
+    position: relative;
+}
+
+.landingBackgroundImage {
+    height: 90%;
+    position: relative;
+}
+
+.landingTextContainer {
+    position: absolute;
+    top: 25%;
+    transform: translateX(-30%);
+    left: 0;
+    text-align: left;
+    text-wrap: nowrap;
+}
+
+.aboutContainer {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.landingTitle {
+    font-size: 8em;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 90%;
+}
+
+.landingBlurbContainer {
+    position: absolute;
+    top: 65%;
+    left: 90%;
+    width: 35%;
+    transform: translateX(-50%);
+}
+
+.landingBlurb {
+    color: #282a54;
+    font-size: 1.25em;
+}
+
+.landingPosition {
+    color: #282a54;
+    font-size: 2.75em;
+    font-style: italic;
+}
+
+.landingButtonContainer {
+    display: flex;
+    gap: 2rem;
+    padding: 25px 0px;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    position: absolute;
+    top: 100%;
+    left: 2%;
+    transform: translateY(-130%);
+}
+
+.fakeIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #454b9b;
+    ;
+}
+
+.landingButton {
+    background-color: #ceddff;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.landingActionButtonContainer {
+    position: absolute;
+    top: 80%;
+    left: 85%;
+}
+
+.landingActionButton {
+    background-color: #85c2ea;
+    padding: 5px 30px;
+    border-radius: 50px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.rightDetailBlurb {
+    color: #c5d7f1;
+    font-size: 1.5em;
+    transform: translateX(-55%) rotate(-90deg) ;
+
+    text-wrap: nowrap;
+    position: absolute;
+    left: 100%;
+}
+
+.nav {
+    // border-bottom: 1px solid black;
+    position: sticky;
+    top: 20;
+    z-index: 100;
+}
+
+.birdLogo {
+    width: 50px;
+}
+
+.birdLogoListItem {
+    margin-left: auto;
+    display: none;
+}
+
+
+.nav__toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    right: 0;
+}
+
+svg {
+    width: 1.5rem;
+    fill: rgb(28, 4, 85);
+}
+
+.close {
+    display: none;
+}
+
+.menu {
+    margin-top: 0.2rem;
+    
+}
+
+#nav__checkbox {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    // margin: 1rem;
+    
+}
+
+li {
+    list-style: none;
+    display: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+}
+
+#nav__checkbox:checked~ul.nav__menu li {
+    display: block;
+}
+
+#nav__checkbox:checked~label.nav__toggle .close {
+    display: block;
+}
+
+#nav__checkbox:checked~label.nav__toggle .menu {
+    display: none;
+}
+
+@media only screen and (min-width:560px) {
+    .nav__toggle {
+        display: none;
+    }
+
+    li {
+        display: block;
+    }
+
+    .nav__menu {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+        position: sticky;
+
+    }
+
+    .birdLogoListItem {
+        margin-left: auto;
+        display: block;
+    }
+}
