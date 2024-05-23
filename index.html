@@ -7,9 +7,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/0b9f4346c0.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </head>
 
-    <body style=''>
+    <body>
 
 
         <nav class='nav'>
@@ -27,25 +30,24 @@
                 </svg>
             </label>
             <ul class='nav__menu'>
-                <li><a href="#">Home</a></li>
+                <li><a  onclick="toggleLandingText()" href="#home">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Resume</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Contact</a></li>
-                <li class = 'birdLogoListItem' >
+                <li class='birdLogoListItem'>
                     <image class='birdLogo' src='bird_logo.png' />
                 </li>
             </ul>
         </nav>
 
-        <div class='landingContainer'>
+        <div id='home' class='landingContainer'>
             <!-- <video autoplay muted loop id="myVideo">
                 <source src="hummingbird.mp4" type="video/mp4">
             </video> -->
             <div class='landingImageContainer'>
                 <image class='landingBackgroundImage' src='webuwu copy.png' />
-                <div class='landingTextContainer'>
+                <div id = 'landingText' class='landingTextContainer'>
                     <div class='landingTitle'>
                         Alexia Hassan
                     </div>
@@ -54,31 +56,37 @@
                     </div>
                 </div>
 
-                <div class='landingBlurbContainer'>
-                    <div class='landingBlurb'>
-                        Passionate about combining technical skills with creative designs
+                <div class='landingButtonContainer'>
+                    <div class='landingActionButton'>
+                        Learn More
                     </div>
                 </div>
             </div>
 
             <div class='iconContainer'>
-                <div class='fakeIcon'></div>
-                <div class='fakeIcon'></div>
-                <div class='fakeIcon'></div>
-            </div>
+                <div class='socialIcon'>
+                    <a href=''>
+                        <i class="fa-brands fa-linkedin-in"></i>
 
-            <div class='landingActionButtonContainer'>
-                <div class='landingActionButton'>
-                    Contact
+                    </a>
+                </div>
+                <div class='socialIcon'>
+                    <a href=''>
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+                <div class='socialIcon'>
+                    <a href=''>
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                    </a>
                 </div>
             </div>
 
-            <div class = 'rightDetailBlurb'>
+            <div class='rightDetailBlurb'>
                 Let's make something beautiful
             </div>
         </div>
-
-
 
 
         <div class='aboutContainer'>
@@ -89,6 +97,9 @@
 
             I have a wonderful black cat named Loki. In my spare time I appreciate painting, music, and life's simple
             things: videogames and long, frequent naps.
+
+
+            ++ RESUME
         </div>
 
     </body>

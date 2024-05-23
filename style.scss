@@ -59,21 +59,19 @@ body {
     line-height: 90%;
 }
 
-.landingBlurbContainer {
+.landingButtonContainer {
     position: absolute;
     top: 65%;
     left: 90%;
-    width: 35%;
+  text-wrap: nowrap;
     transform: translateX(-50%);
 }
 
 .landingBlurb {
-    color: #282a54;
     font-size: 1.25em;
 }
 
 .landingPosition {
-    color: #282a54;
     font-size: 2.75em;
     font-style: italic;
 }
@@ -94,12 +92,17 @@ body {
     transform: translateY(-130%);
 }
 
-.fakeIcon {
+.socialIcon {
+    color: #c5d7f1;
     width: 50px;
     height: 50px;
+    font-size: 1.75em;
     border-radius: 100%;
     background-color: #454b9b;
-    ;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
 }
 
 .landingButton {
@@ -118,16 +121,16 @@ body {
 
 .landingActionButton {
     background-color: #85c2ea;
-    padding: 5px 30px;
+    padding: 5px 20px;
     border-radius: 50px;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
 }
 
 .rightDetailBlurb {
     color: #c5d7f1;
     font-size: 1.5em;
-    transform: translateX(-55%) rotate(-90deg) ;
+    transform: translateX(-55%) rotate(-90deg);
 
     text-wrap: nowrap;
     position: absolute;
@@ -169,7 +172,7 @@ svg {
 
 .menu {
     margin-top: 0.2rem;
-    
+
 }
 
 #nav__checkbox {
@@ -182,7 +185,7 @@ svg {
     gap: 2rem;
     align-items: center;
     // margin: 1rem;
-    
+
 }
 
 li {
