@@ -4,6 +4,8 @@ body {
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
+
+    overflow: hidden;
 }
 
 #myVideo {
@@ -63,7 +65,7 @@ body {
     position: absolute;
     top: 65%;
     left: 90%;
-  text-wrap: nowrap;
+    text-wrap: nowrap;
     transform: translateX(-50%);
 }
 
@@ -137,8 +139,73 @@ body {
     left: 100%;
 }
 
+
+.aboutContainer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.aboutBackgroundImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.aboutBackgroundImage {
+    width: 50%;
+}
+
+.aboutTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    text-align: left;
+    gap: 10%;
+}
+
+.aboutTextEducation {
+    width: 100%;
+}
+
+.aboutTextHeader {
+    font-size: 4.25em;
+    width: 100%;
+}
+
+.aboutTextEducationHeader {
+    font-size: 2.75em;
+    width: 100%;
+}
+
+.aboutTextEducationSecondary {
+    font-size: 2.25em;
+    width: 100%;
+
+}
+
+.aboutTextEducationTertiary {
+    font-size: 1.75em;
+    width: 100%;
+}
+
+.aboutBlurb {
+    width: 60%;
+    margin-right: auto;
+    font-size: 1.5em;
+
+}
+
 .nav {
-    // border-bottom: 1px solid black;
     position: sticky;
     top: 20;
     z-index: 100;
@@ -159,6 +226,10 @@ body {
     cursor: pointer;
     margin: 0rem 1rem;
     right: 0;
+}
+
+.aboutBackgroundImage {
+    height: 50%;
 }
 
 svg {
