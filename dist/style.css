@@ -169,7 +169,7 @@ body {
   height: 100%;
   flex-direction: column;
   text-align: left;
-  gap: 10%;
+  gap: 8%;
 }
 
 .aboutTextEducation {
@@ -197,7 +197,7 @@ body {
 }
 
 .aboutBlurb {
-  width: 60%;
+  width: 50%;
   margin-right: auto;
   font-size: 1.5em;
 }
@@ -226,6 +226,7 @@ body {
 
 .aboutBackgroundImage {
   height: 50%;
+  transform: rotate(180deg);
 }
 
 svg {
