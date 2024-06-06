@@ -1,11 +1,15 @@
 body {
-    background-color: #dce9fd;
+    background-color: #ccdef4;
     color: #454b9b;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
 
     overflow: hidden;
+}
+
+.activeTab {
+    font-weight: bold;
 }
 
 #myVideo {
@@ -22,7 +26,6 @@ body {
 }
 
 .landingContainer {
-    background-color: #dce9fd;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -37,7 +40,7 @@ body {
 }
 
 .landingBackgroundImage {
-    height: 90%;
+    height: 80%;
     position: relative;
 }
 
@@ -60,11 +63,11 @@ body {
 }
 
 .landingTitle {
-    font-size: 8em;
+    font-size: 6.5em;
     font-family: "Satisfy", cursive;
     font-weight: 400;
     font-style: normal;
-    line-height: 90%;
+    line-height: 100%;
 }
 
 .landingButtonContainer {
@@ -80,7 +83,7 @@ body {
 }
 
 .landingPosition {
-    font-size: 2.75em;
+    font-size: 2.25em;
     font-style: italic;
 }
 
@@ -166,7 +169,7 @@ body {
 }
 
 .aboutBackgroundImage {
-    width: 50%;
+    height: auto;
 }
 
 .aboutTextContainer {
@@ -182,7 +185,7 @@ body {
     flex: 1;
     margin-left: 10%;
     margin-right: 10%;
-    gap: 8%;
+    gap: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,15 +196,16 @@ body {
 }
 
 .aboutTextHeader {
-    font-size: 4.25em;
+    font-size: 3.75em;
+    font-style: italic;
 }
 
 .aboutTextEducationHeader {
-    font-size: 2.25em;
+    font-size: 2em;
 }
 
 .aboutTextEducationSecondary {
-    font-size: 2em;
+    font-size: 1.75em;
 }
 
 .aboutTextEducationTertiary {
@@ -212,7 +216,7 @@ body {
 .aboutBlurb {
     width: 50%;
     margin-right: auto;
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: left;
 }
 
@@ -294,6 +298,27 @@ a {
 
 #nav__checkbox:checked~label.nav__toggle .menu {
     display: none;
+}
+
+.projectsContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectsListContainer {
+    background-color: orange;
+}
+
+.projectsList {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectItem {
+    background-color: green;
 }
 
 @media only screen and (min-width:560px) {
